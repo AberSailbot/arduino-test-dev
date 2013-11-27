@@ -1,7 +1,7 @@
 #include <Wire.h> 
-#define ADDRESS 0x60 // CMPS10
 
 byte bearing(){
+  #define ADDRESS 0x60 // CMPS10 I2C address
   Wire.beginTransmission(ADDRESS);
   Wire.write(1);
   Wire.endTransmission();
