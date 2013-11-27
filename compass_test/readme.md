@@ -1,7 +1,9 @@
 compass_test
 ============
 
-Displays the reading from the CMPS10 compass.
+Example code for the
+[CMPS10](http://www.robot-electronics.co.uk/htm/cmps10doc.htm)
+tilt-compensating compass. Displays the bearing in a continuous loop.
 
 Wiring
 ======
