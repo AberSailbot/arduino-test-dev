@@ -10,7 +10,8 @@ byte read_i2c(int address, int _register) {
 
 byte bearing(){
   int compass_address = 0x60; // CMPS10 I2C address
-  return read_i2c(compass_address, 1);
+  int bearing_register = 1; // register containing the bearing 0-255
+  return read_i2c(compass_address, bearing_register);
 }
 
 void setup(){
