@@ -1,12 +1,16 @@
 #include <Wire.h> 
 
-byte bearing(){
-  #define ADDRESS 0x60 // CMPS10 I2C address
-  Wire.beginTransmission(ADDRESS);
-  Wire.write(1);
+byte read_i2c(int address, int _register) {
+  Wire.beginTransmission(address);
+  Wire.write(_register);
   Wire.endTransmission();
-  Wire.requestFrom(ADDRESS, 1);
+  Wire.requestFrom(address, 1);
   return Wire.read();
+}
+
+byte bearing(){
+  int compass_address = 0x60; // CMPS10 I2C address
+  return read_i2c(compass_address, 1);
 }
 
 void setup(){
