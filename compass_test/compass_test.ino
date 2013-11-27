@@ -20,7 +20,7 @@ void setup(){
 }
 
 void loop(){
-  Serial.println(bearing(), DEC);
+  Serial.println(bearing());
   delay(100);
 }
 
