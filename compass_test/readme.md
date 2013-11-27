@@ -8,4 +8,7 @@ tilt-compensating compass. Displays the bearing in a continuous loop.
 Wiring
 ======
 
+* TX -> A4
+* RX -> A5 
+
 ![wiring](https://raw.github.com/AberSailbot/arduino-test-dev/master/compass_test/wiring.jpg "Photograph of wiring for the compass and arduino")
