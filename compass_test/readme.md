@@ -10,6 +10,8 @@ Wiring
 
 * TX -> A4 (SDA)
 * RX -> A5 (SCL)
+* Ground -> Ground
+* Power -> 5v
 * Both have 3.3k pullup resistors.
 
 ![wiring](https://raw.github.com/AberSailbot/arduino-test-dev/master/compass_test/wiring.jpg "Photograph of wiring for the compass and arduino")
